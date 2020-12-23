@@ -3,9 +3,10 @@ import numpy as np
 
 # reading various images
 # NOTE these images must ne stored in same directory where this file is stored
-img1 = cv2.imread('imageSources/avengers.jpg')
-img2 = cv2.imread('imageSources/car.jpg')
-img3 = cv2.imread('imageSources/balls.jpg')
+# the images is given in this repository please check
+img1 = cv2.imread('avengers.jpg')
+img2 = cv2.imread('car.jpg')
+img3 = cv2.imread('balls.jpg')
 
 # create a image_matrix which is 2D array which consists images
 # The ouput will be shown in the order in image_matrix
@@ -45,5 +46,6 @@ output2 = stacking(image_matrix1,0.5)  # the image which consists of blank image
 # display the image
 cv2.imshow('stacked_image', output)
 cv2.imshow('secondexample',output2)
+#the outputs are stored in this repository
 cv2.waitKey(0)
 cv2.destroyAllWindows()
